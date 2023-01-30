@@ -4,4 +4,4 @@
 
 ## autosusida
 
-
+Pythonの寿司打の自動スクリプト
