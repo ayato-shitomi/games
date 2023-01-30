@@ -1,6 +1,7 @@
 # Windows環境で実行
 # インストールの必要がある
 #   C:\\Program Files\\Tesseract-OCR\\tesseract.exe
+# 画面取得のところは各々調節が必要
 
 import pyautogui
 import keyboard
