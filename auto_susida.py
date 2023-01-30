@@ -24,11 +24,9 @@ def get_mouse_position():
 
 def init():
     print("init")
-    # 始点 PyautoGUIによりマウス座標の取得
     begin = get_mouse_position()
     print("begin:","\t",begin)
     time.sleep(1)
-    # 終点 PyautoGUIによりマウス座標の取得
     end = get_mouse_position()
     print("end:","\t",end)
     return begin, end
@@ -62,6 +60,3 @@ if __name__ == '__main__':
     while True:
         text = get_str(str_b, str_e, engine)
         pyautogui.write(text, interval=random.uniform(0.1, 0.25))
-        #pyautogui.write(text, interval=0.3)
-        #pyautogui.write(text)
-        #time.sleep(0.5)
