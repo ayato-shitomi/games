@@ -46,12 +46,12 @@ def calculate_point(w_begin, w_end):
     
 def get_str(begin, end, engine):
     img = ImageGrab.grab(bbox=(begin.x + 180, begin.y + 90, end.x - 180, end.y - 20))
-    #img.convert('L').show()
     return engine.image_to_string(img, lang="eng")
 
 if __name__ == '__main__':
     pyocr.tesseract.TESSERACT_CMD = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
     pyocr.tesseract.CUNEIFORM_CMD = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+    
     engines = pyocr.get_available_tools()
     engine = engines[0]
     begin, end = init()
